@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quan Tri</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- ===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Linking Google Font Link For Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--<link rel="stylesheet" href="style2.css" />-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+      li {
+        list-style: none;
+      }
+    </style>
+  </head>
+
+  <body ng-app="myApp">
+    <header>
+      <!-- place navbar here -->
+      <nav>
+        <div class="nav-bar">
+          <div class="darkLight-searchBox">
+            <div class="dark-light">
+              <i class="bx bx-moon moon"></i>
+              <i class="bx bx-sun sun"></i>
+            </div>
+            <div class="searchBox">
+              <div class="searchToggle">
+                <i class="bx bx-x cancel"></i>
+                <i class="bx bx-search search"></i>
+              </div>
+              <div class="search-field">
+                <input type="text" placeholder="Search..." />
+                <i class="bx bx-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="images/congcu.png" alt="logo" />
+        <div class="row">
+          <h2>Trang Quản Trị</h2>
+          <span class="text-start ms-4" style="color: var(--text-color)"
+            >User administration</span
+          >
+        </div>
+      </div>
+      <ul class="sidebar-links">
+        <h4>
+          <span>Tổng Quan</span>
+          <div class="menu-separator"></div>
+        </h4>
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined"
+              ><i class="fa-solid fa-list"></i
+            ></span>
+            ĐẶT NƯỚC
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined"
+              ><i class="fa-solid fa-sack-dollar"></i
+            ></span>
+            HÓA ĐƠN
+          </a>
+        </li>
+        <h4>
+          <span>QUẢN LÝ</span>
+          <div class="menu-separator"></div>
+        </h4>
+        <li>
+          <a href="#"
+            ><span class="material-symbols-outlined"
+              ><i class="fa-regular fa-user"></i></span
+            >QUẢN LÝ THỰC UỐNG</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><span class="material-symbols-outlined">
+              <i class="fa-solid fa-users"></i></span
+            >QUẢN LÝ NHÂN VIÊN</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><span class="material-symbols-outlined">
+              <i class="fa-solid fa-user-plus"></i> </span
+            >QUẢN LÝ HÓA ĐƠN</a
+          >
+        </li>
+        <h4>
+          <span>DANH SÁCH</span>
+          <div class="menu-separator"></div>
+        </h4>
+
+        <li>
+          <a href="#"
+            ><span class="material-symbols-outlined">
+              <i class="fa-solid fa-hand-holding-dollar"></i> </span
+            >DANH SÁCH NHÂN VIÊN</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><span class="material-symbols-outlined">
+              <i class="fa-regular fa-clipboard"></i></span
+            >DANH SÁCH THỨC UỐNG</a
+          >
+        </li>
+        <h4>
+          <span>Quản lý tài khoản</span>
+          <div class="menu-separator"></div>
+        </h4>
+        <li>
+          <a href="#"
+            ><span class="material-symbols-outlined">account_circle </span>Thêm
+            tài khoản</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><span class="material-symbols-outlined">
+              <i class="fa-regular fa-address-book"></i></span
+            >Danh sách tài khoản</a
+          >
+        </li>
+        <h4>
+          <a href="#">
+            <span>BÁO CÁO</span>
+            <div class="menu-separator"></div>
+          </a>
+        </h4>
+        <h4>
+          <li>
+            <a href="#"
+              ><span class="material-symbols-outlined">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> </span
+              >Logout</a
+            >
+          </li>
+        </h4>
+      </ul>
+      <div class="user-account">
+        <div class="user-profile">
+          <img src="images/logo.jpg" alt="Profile Image" />
+          <div class="user-detail">
+            <h3>Cheese Team</h3>
+            <span>---Phomat---</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <article></article>
+    <main class="">
+      <div
+        class="shadow p-3 mb-5 bg-white rounded p-2 text-dark "
+        style="
+          margin-left: 150px;
+          margin-right: 60px;
+          margin-top: 70px;
+          height: auto;
+        "
+      >
+        <div class="row col-md-12">
+            <div class="col-md-3">
+                <label for="">Thời gian</label>
+                <input type="date" name="" id="" class="form-control">
+            </div>
+            <div class="col-md-3">
+                <label for="">Thời gian</label>
+                <input type="date" name="" id="" class="form-control">
+            </div>
+            <div class="col-md-3">
+                <label for="">Trạng thái thanh toán</label>
+                <select class="form-select">
+                    <option value="">Thanh toán bằng tiền mặt</option>
+                    <option value="">Thanh toán bằng mã QR</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="">Nhân viên phụ trách</label>
+                <select class="form-select">
+                    <option value="">Tất cả</option>
+                    <option value="">Nhân viên A</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-outline-success mt-3"><i class="fa-solid fa-filter pe-2" aria-hidden="true"></i>Lọc</button>
+        </div>
+        <div class="row">
+            <p class="fs-2 mt-2 text-center fw-bold">BÁO CÁO CHI TIẾT HÓA ĐƠN</p>
+        </div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">MÃ HĐ</th>
+                <th scope="col">ID NHÂN VIÊN</th>
+                <th scope="col">TỔNG TIỀN</th>
+                <th scope="col">NGÀY TẠO</th>
+                <th scope="col">PHƯƠNG THỨC TT</th>
+                <th scope="col">CHI TIẾT</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>NV001</td>
+                <td>100.000 VNĐ</td>
+                <td>26/07/2024</td>
+                <td>Thanh toán bằng tiền mặt</td>
+                <td>
+                    <button type="button" class="btn text-white" style="background: #d10a0a;">Xem</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>NV002</td>
+                <td>100.000 VNĐ</td>
+                <td>26/07/2024</td>
+                <td>Thanh toán bằng tiền mặt</td>
+                <td>
+                    <button type="button" class="btn text-white" style="background: #d10a0a;">Xem</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>NV003</td>
+                <td>100.000 VNĐ</td>
+                <td>26/07/2024</td>
+                <td>Thanh toán bằng tiền mặt</td>
+                <td>
+                    <button type="button" class="btn text-white" style="background: #d10a0a;">Xem</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>NV004</td>
+                <td>100.000 VNĐ</td>
+                <td>26/07/2024</td>
+                <td>Thanh toán bằng tiền mặt</td>
+                <td>
+                    <button type="button" class="btn text-white" style="background: #d10a0a;">Xem</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>NV005</td>
+                <td>100.000 VNĐ</td>
+                <td>26/07/2024</td>
+                <td>Thanh toán bằng tiền mặt</td>
+                <td>
+                    <button type="button" class="btn text-white" style="background: #d10a0a;">Xem</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>NV006</td>
+                <td>100.000 VNĐ</td>
+                <td>26/07/2024</td>
+                <td>Thanh toán bằng tiền mặt</td>
+                <td>
+                    <button type="button" class="btn text-white" style="background: #d10a0a;">Xem</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>NV007</td>
+                <td>100.000 VNĐ</td>
+                <td>26/07/2024</td>
+                <td>Thanh toán bằng mã QR</td>
+                <td>
+                    <button type="button" class="btn text-white" style="background: #d10a0a;">Xem</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>NV008</td>
+                <td>100.000 VNĐ</td>
+                <td>26/07/2024</td>
+                <td>Thanh toán bằng tiền mặt</td>
+                <td>
+                    <button type="button" class="btn text-white" style="background: #d10a0a;">Xem</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>NV009</td>
+                <td>100.000 VNĐ</td>
+                <td>26/07/2024</td>
+                <td>Thanh toán bằng mã QR</td>
+                <td>
+                    <button type="button" class="btn text-white" style="background: #d10a0a;">Xem</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>NV010</td>
+                <td>100.000 VNĐ</td>
+                <td>26/07/2024</td>
+                <td>Thanh toán bằng mã QR</td>
+                <td>
+                    <button type="button" class="btn text-white" style="background: #d10a0a;">Xem</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="js/script2.js"></script>
+
+    <!-- =================================== -->
+
+    <!-- <script src="script.js"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
